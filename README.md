@@ -13,5 +13,5 @@ Projeto feito em React + TypeScript englobando um CRUD de produtos usando locals
 
 <img src="./public/design/print-1.png">
 <img src="./public/design/print-2.png">
-<img src="./public/design/print-3.png">
-<img src="./public/design/print-4.png">
+<img src="./public/design/print-mobile-1.png">
+<img src="./public/design/print-mobile-2.png">
