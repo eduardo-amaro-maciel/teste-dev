@@ -148,7 +148,9 @@ export function ProductForm({ productEdit }: { productEdit?: Product }) {
               name="name"
               render={({ field: { onChange, name, value } }) => (
                 <MaskedInput
-                  mask={(s: string) => Array.from(s).map(() => /[a-z]/i)}
+                  mask={(s: string) =>
+                    Array.from(s).map(() => /[a-záéíóúàèìòùâêîôûãõçÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕÇ ]/i)
+                  }
                   guide={false}
                   className="flex-1 border outline-none bg-transparent rounded-md h-10 pl-2"
                   name={name}
