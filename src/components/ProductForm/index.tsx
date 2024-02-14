@@ -189,7 +189,7 @@ export function ProductForm({ productEdit }: { productEdit?: Product }) {
                 <Controller
                   control={control}
                   name="quantity"
-                  render={({ field: { onChange, name, value } }) => (
+                  render={({ field: { onChange, name } }) => (
                     <NumericFormat
                       id="quantity"
                       {...(unitScale ? {} : { thousandSeparator: "." })}
@@ -199,7 +199,7 @@ export function ProductForm({ productEdit }: { productEdit?: Product }) {
                       allowNegative={false}
                       allowLeadingZeros={false}
                       onChange={onChange}
-                      value={value}
+                      value={productEdit?.quantity ? productEdit.quantity : ""}
                       className="flex-1 border outline-none bg-transparent rounded-md h-10 pl-2 rounded-r-none w-full"
                     />
                   )}
